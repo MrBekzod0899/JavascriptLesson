@@ -12,7 +12,6 @@ class Car{
     }
 }
 
-
 const Matiz=new Car(700,'white',5000,2014);
 
 console.log(Matiz)
