@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: cadetblue;
+}
+
+.contact{
+    width: 600px;
+    margin: auto;
+    margin-top: 10px;
+}
+.contact a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+h4{
+    text-align: center;
+    padding: 2px 0;
+}
+.user{
+    width: 100%;
+    color: rgb(34, 33, 34);
+    font-weight: bold;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    margin-bottom: 15px;
+}
+
+.userTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.user label{
+    color: rgb(143, 143, 143);
+    font-size:18px;
+    font-weight: 600;
+    display: block;
+    margin: 5px 0;
+}
+.userInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px soli black;
+}
+
+.userInfo span{
+    font-size: 18px;
+}
+address{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:10px;
+    border-bottom: 1px solid black;
+}
+address span{
+    margin-left: 10px;
+    font-size: 20px;
+   
+}
+.contactInfo{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+.phone a{
+    margin-left: 10px;
+}
+
+.website a{
+    margin-left: 10px;
+}
+.workplace p{
+    margin-left: 10px;
+}

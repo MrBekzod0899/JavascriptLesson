@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.title{
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+.enterence{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 30px;
+    align-items: center;
+}
+button{
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+button:hover{
+    filter:hue-rotate(0.4);
+    cursor: pointer; 
+}
+
+.right_child button{
+    padding: 5px 10px;
+    background-color: green;
+    border: none;
+}
+table{
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top:20px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #3a3737;
+}
+table th,table td{
+    vertical-align: center;
+    border-color: rgb(117, 115, 115) !important;
+    border:1px solid;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+table th:last-child{
+    width: 100px;
+}
+table td i:nth-child(2){
+    color: rgb(255, 157, 0);
+    margin: 0 5px;
+}
+table td i:last-child{
+    color: rgb(138, 6, 6);
+}
+table td i{
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+table td img{
+    width: 50px;
+}
+.modal{
+    position: fixed;
+    z-index: 10;
+    color: black;
+    width: 360px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    top: -600px;
+    transition:1s;
+    background-color: white;
+}
+
+.modal.show{
+    top: 50px;
+}
+.modal-header{
+    display: flex;
+    flex-direction: column;
+}
+.modal-title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.modal-header input, .modal-header select, .modal-header textarea{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    
+}
+
+.modal_action{
+    display: flex;
+    justify-content: space-between;
+}
+.modal_action button{
+    flex-basis: 48%;
+  
+}
+.modal_action button:first-child{
+    background-color: red;
+}
+.modal_action button:last-child{
+    background-color: green;
+}
+
+.storage{
+    padding: 10px;
+}
+
+.storage label{
+    margin-bottom: 5px;
+    display: block;
+    cursor: pointer;
+}
+.storage label span{
+    margin-left: 10px;
+}
+
+.viewbox{
+    height: 450px;
+    width: 50%;
+    position: fixed;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    top: 80px;
+    background:#fdfcfc;
+    margin: 0 auto;
+    z-index: 10;
+    box-shadow: 0 0 10px #3a3737;
+    display: flex;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    transition:width linear 1s;
+}
+.viewbox::-webkit-scrollbar{
+    width: 3px;
+}
+.viewbox .leftsection img{
+    width: 300px;
+    padding: 10px;
+}
+.closebtn{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background: unset;
+}
+.closebtn::after,.closebtn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transform: rotate(45deg);
+}
+.closebtn::after{
+    transform: rotate(-45deg);
+}
+.viewbox.hide{
+    display: none;
+    width: 0;
+    z-index: 0;
+}
+.viewbox .rightsection #modalviewlist{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    width: 300px
+}
+
+#modalviewlist li:nth-child(odd){
+    font-weight: bold;
+}
+#modalviewlist li:nth-child(even){
+    margin-bottom: 10px;
+}
+#modalviewlist textarea{
+    width: 100%;
+    height: 100px;
+    overflow-y: scroll;
+}
