@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body main{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+main form{
+    width: 40%;
+    margin: 0 auto;
+    padding: 60px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    box-shadow: 0 0 10px #fd3939;
+    border-radius: 20px;
+}
+
+form input,
+form button{
+    width: 80%;
+    margin: 10px auto;
+    height: 40px;
+    border-radius: 100px;
+    background-color: white;
+    padding: 10px;
+    border: none;
+}
+form input:focus,
+form button:focus{
+    outline: none;
+}
+
+form button{
+    background: #fd3939;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+form input{
+    font-size: 16px;
+    
+}
+form input::placeholder{
+    color:darkgray;
+}

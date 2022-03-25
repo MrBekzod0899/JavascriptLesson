@@ -1,0 +1,24 @@
+{
+    "persons":[ 
+        {
+            "name":"Bekzod",
+            "age":22,
+            "occupation":"web developer"
+        },
+        {
+            "name":"Ruslan",
+            "age":22,
+            "occupation":"Net developer"
+        },
+        {
+            "name":"Ozod",
+            "age":22,
+            "occupation":"Transport agency"
+        },
+        {
+            "name":"Abbos",
+            "age":21,
+            "occupation":"Flutter developer"
+        }
+    ]
+}
