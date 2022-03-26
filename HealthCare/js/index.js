@@ -1,0 +1,1 @@
+let menuitems=document.querySelectorAll('.side-menu li')
