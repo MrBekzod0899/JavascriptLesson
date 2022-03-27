@@ -5,11 +5,12 @@
 }
 
 body{
-    height: 100vh;
+    height: 100%;
     font-family:'Lato', 'regular';
     background: rgba(246, 248, 251, 1) ;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 a{
     text-decoration: none;
@@ -17,10 +18,10 @@ a{
 }
 
 aside{
-    width: 256px;
-    height: 100vh;
+    min-height: 100vh;
+    width: 256px !important;
     background-color: white;
-    box-shadow: 0 0 5px rgba(16, 30, 115, 0.08);
+    box-shadow: 0 0 15px rgba(16, 30, 115, 0.08);
     padding-top:24px;
     box-sizing: border-box;
 }
@@ -64,12 +65,19 @@ aside ul li.active a{
     filter: grayscale(0);
     color: rgb(51, 108, 201);
 }
+
 aside ul li a{
     font-size: 14px;
     line-height: 20px;
     margin-left: 10px;  
     font-weight: bold;
     color: rgba(82, 87, 92, 1);
+}
+aside ul li:hover{
+    filter: grayscale(0);
+}
+aside ul li:hover a{
+    color: rgb(51, 108, 201) !important;
 }
 aside ul li i{
     color: rgb(51, 108, 201);
@@ -83,7 +91,7 @@ aside ul li i{
 }
 hr{
     width: 100%;
-    border: 1px solid gray;
+    background-color: gray;
 }
 .side-footer p{
     margin-top: 20px;
@@ -96,7 +104,7 @@ hr{
 
 main{
     width: calc(100vw - 256px);
-    padding: 24px 38px 24px 36px;
+    padding: 24px 30px 24px 36px;
 }
 main nav{
     display: flex;
@@ -126,12 +134,13 @@ main nav .inputgroup i{
     font-size: 14px;
     margin-right: 10px;
 }
+
 .profile{
     display: flex;
     align-items: center;
 }
 
-.profile span{
+.profile>span{
     position: relative;
     margin-right: 27px;
     box-sizing: content-box;
@@ -143,8 +152,19 @@ main nav .inputgroup i{
 }
 .profile span span{
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: -12px;
+    right: -12px;
+    font-size: 10px;
+    line-height: 12px;
+    background-color: red;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    padding: 2px;
+    box-sizing: content-box;
+    border: 3px solid rgba(246, 248, 251, 1);
 }
 .user_account{
     width: 40px;
@@ -153,4 +173,139 @@ main nav .inputgroup i{
     background-position: center center;
     background-size: cover;
     border-radius: 50%;
+    box-sizing: content-box;
+    border: 3px solid #e8e8e8;
 }
+section.cards{
+    margin: 32px 0 38px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.cards .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 0 10px rgba(18, 30, 109, 0.239);
+    flex-basis: 20%;
+    height: 90px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+section.cards .card .left{
+    margin-right:29px;
+}
+section.cards .card .left svg{
+    color: rgba(51, 108, 251, 1);
+}
+section.cards .card .right h4{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Regular';
+    color: rgba(37, 40, 43, 1);
+}
+section.cards .card .right span{
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Regular';
+    line-height: 22px;
+    color: rgba(51, 108, 251, 1);
+}
+
+.table-section{
+    background: white;
+    border-radius:8px;
+    margin: 20px 0;
+}
+
+.head-title h1{
+    padding: 20px;
+    font-size: 20px;
+    color: #25282B;
+    line-height: 26px;
+    font-weight: 700;
+}
+.table-section table{
+    border-collapse: collapse;
+    width:100%;
+    text-align: left;
+}
+
+table thead tr{
+    background: #E8E8E8;
+    border-bottom: 2px solid rgba(219, 221, 224, 1);
+    color: rgba(37, 40, 43, 1);
+}
+
+table tr{
+  height: 56px;
+  background-color: white;
+  border-bottom: 2px solid rgba(232, 232, 232, 1);
+}
+
+
+table thead tr th:first-child{
+    padding: 0 20px;
+}
+table tbody tr td:first-child{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+}
+table tbody tr td{
+    font-size: 14px;
+    color: rgba(82, 87, 92, 1);
+    line-height: 20px;
+}
+table tbody tr td:first-child img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right:12px ;
+}
+table tbody tr td:last-child svg{
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.pagination{
+    width: 100%;
+    padding: 20px 20px;
+    background-color: white;
+}
+.pagination div button{
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    background-color:white;
+     border:1px solid #e8e8e8;
+     border-radius: 2px;
+     cursor: pointer;
+}
+main{
+    position: relative;
+}
+.message{
+    position: fixed;
+    z-index: 2;
+    width: 64px;
+    height: 64px;
+    background:  rgba(51, 108, 251, 1);
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+.message i{
+    font-size: 26px;
+    line-height: 30px;
+}
+
