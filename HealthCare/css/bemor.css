@@ -1,0 +1,17 @@
+.bemor{
+    width: 100%;
+    margin:20px 0;
+}
+
+.bemor-header{
+    gap:1rem ;
+   display: block;
+   float: left;
+    width: 100%;
+}
+
+.bemor-header .right .title{
+
+    display: flex;
+    justify-content: space-between;
+}
