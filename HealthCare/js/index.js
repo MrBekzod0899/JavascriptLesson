@@ -14,3 +14,6 @@ function cancel(){
 function save(){
     showModal.classList.remove('show')
 }
+function addPatient(){
+    
+}

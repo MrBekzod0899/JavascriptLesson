@@ -309,3 +309,96 @@ main{
     line-height: 30px;
 }
 
+
+.modalPatient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(200, 200, 200, 0.58);
+    display: flex;
+    justify-content: center;
+}
+.modalPatient .modalbody {
+    position: absolute;
+    top: 100px;
+    left: center;
+    width: 45%;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 300px;
+    padding: 30px 45px;
+}
+.modalPatient .modalbody .modal-title{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.modalPatient .modalbody .modal-header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 5px 0;
+}
+.modalPatient .modalbody  h4{
+    text-align: center;
+    margin: 5px 0;
+}
+.modalPatient .modalbody .modal-header .box{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #56CCF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.modal-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 21px;
+}
+
+.modal-content input,.modal-content select{
+    width: 100%;
+    background: #FDFDFD;
+    border: 1px solid #BBBBBB;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    padding:10px 11px 10px 14px;
+    box-sizing: border-box;
+    color: rgba(187, 187, 187, 1);
+}
+.modal-content input:focus,.modal-content select:focus{
+    outline: none;
+}
+.modal-action{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.modal-action button{
+    color: white;
+    padding: 9px 35px;
+    font-size: 11px;
+    line-height: 13px;
+    background: #EB5757;
+    border-radius: 10px;
+    border: unset;
+    cursor: pointer;
+}
+.modal-action button:last-child{
+    background: #27AE60;
+}
