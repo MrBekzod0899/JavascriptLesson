@@ -1,17 +1,111 @@
 .bemor{
     width: 100%;
     margin:20px 0;
+    background: white;
 }
 
 .bemor-header{
-    gap:1rem ;
-   display: block;
-   float: left;
+    display: flex;
     width: 100%;
+    border-bottom: 1px solid #323232;
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.bemor .left{
+    flex-basis: 24%;
+}
+.bemor .left img{
+    width: 100% !important;
+    height: 100% !important;
 }
 
+.bemor .right{
+    flex-basis: 70%;
+    padding: 20px 25px 30px 20px;
+    box-sizing: border-box;
+}
 .bemor-header .right .title{
-
     display: flex;
     justify-content: space-between;
+    margin: 10px 0;
+}
+
+.bemor-header .right .title h4{
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: 'Regular';
+}
+.bemor-header .right .title div svg{
+    font-size: 16px;
+    margin: 5px;
+}
+
+.bemor-header .right .info{
+    display: block;
+    width: 100%;
+}
+.bemor-header .right .info .item{
+    display: flex;
+    float: left;
+    padding: 10px 0;
+}
+.bemor-header .right .info .item:nth-child(odd){
+    width: 40%;
+}
+.bemor-header .right .info .item:nth-child(even){
+    width: 60%;
+
+}
+.bemor-header .right .info .bigitem{
+    width: 100% !important;
+}
+
+.bemor-header .right .info .item label{
+    color: rgba(96, 96, 96, 1);
+    margin-right: 40px;
+    font-size: 14px;
+}
+.bemor-footer{
+    padding: 33px 20px;
+   border-bottom: 1px solid #323232;
+}
+.bemor-footer h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+.bemor-footer .bemor-cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.bemor-footer .bemor-card{
+    flex-basis: 33%;
+    width: 33%;
+    max-width: 33%;
+}
+.bemor-footer .bemor-card .card-element {
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+}
+.bemor-footer .bemor-card .card-element label{
+    color: #323232;
+    float:left;
+    width: 40%;
+    font-size: 14px;
+    font-style: normal;
+
+}
+.bemor-footer .bemor-card .card-element span{
+    color: black;
+    width: 60%;
+    float: left;
+    font-size: 16px;
+}
+.clear{
+    clear: both;
 }
