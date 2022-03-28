@@ -85,6 +85,7 @@
 .bemor-footer .bemor-card{
     flex-basis: 33%;
     width: 33%;
+    padding: 0 10px;
     max-width: 33%;
 }
 .bemor-footer .bemor-card .card-element {
@@ -98,7 +99,6 @@
     width: 40%;
     font-size: 14px;
     font-style: normal;
-
 }
 .bemor-footer .bemor-card .card-element span{
     color: black;
@@ -106,6 +106,43 @@
     float: left;
     font-size: 16px;
 }
+.bemor-content{
+    border-bottom: none;
+    box-shadow: 0 0 10px rgba(16, 30, 115, 0.06);
+}
+.bemor-table{
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(16, 30, 115, 0.06);
+}
+.bemor-table .head-title{
+    padding: 20px;
+    font-size: 20px;
+}
+.bemor-table table thead tr{
+    background: white !important;
+}
 .clear{
     clear: both;
+}
+
+.bemor-table .head-title>button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background:  #336CFB;
+    color: white;
+    border-radius: 10px;
+    padding:2px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bemor-table .head-title button span{
+    font-size: 9px;
+    line-height: 26px;
+}
+.bemor-table .head-title button i{
+    font-size: 18px;
+    line-height: 26px;
+    margin-right:5px;
 }

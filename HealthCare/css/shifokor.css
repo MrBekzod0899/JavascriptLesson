@@ -1,0 +1,151 @@
+.shifokor-header .right .info {
+ display: flex;
+ justify-content: flex-start;
+}
+.shifokor-header .right .info .left-info{
+    flex-basis: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.shifokor-header .right .info .left-info .item,.shifokor-header .right .info .right-info .item{
+width: 100%;
+}
+.shifokor-header .right .info .left-info label, .shifokor-header .right .info .right-info label{
+    width: 50%;
+    text-align: left;
+}
+.shifokor-header .right .info .left-info span{
+    width: 50%;
+    text-align: left;
+}
+.shifokor-header .right .info .right-info{
+    flex-basis: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.shifokor{
+    background: unset;
+
+}
+.shifokor-footer {
+    border-bottom: none;
+    margin-bottom: 20px;
+    background: white !important;
+
+}
+.shifokor-header{
+    background: white;
+}
+
+.shifokor-table{
+    margin-top: 40px;
+   box-shadow: 0 0 10px rgba(16, 29, 115, 0.06) ;
+}
+.shifokor-table .head-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shifokor-table .head-title button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background:  #336CFB;
+    color: white;
+    border-radius: 10px;
+    padding:2px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.shifokor-table .head-title button span{
+    font-size: 9px;
+    line-height: 26px;
+}
+.shifokor-table .head-title button i{
+    font-size: 18px;
+    line-height: 26px;
+    margin-right:5px;
+}
+body{
+   position: relative;
+}
+.modalExprience{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #32323269;
+    justify-content: center;
+    padding-top:100px;
+    display: none;
+    z-index: 10;
+}
+.modalExprience.show{
+    display: flex;
+}
+.modalExprience .modalbody{
+    background-color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    height: 300px;
+}
+.modalExprience .modalbody input{
+    margin: 10px 0;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #5c58583a;
+}
+.modalExprience .modalbody input:focus,.modalExprience .modalbody input:active{
+    outline: none;
+}
+.modalExprience .modalbody .timeexprience{
+    display: flex;
+    justify-content: space-between;
+}
+.modalExprience .modalbody  label{
+    margin-left: 5px;
+    color: gray;
+    font-size: 14px;
+}
+.modalbody {
+    position: relative;
+}
+.modalbody i.fa-xmark {
+   position: absolute;
+   top: 10px;
+   right: 20px;
+   font-size:16px ;
+   cursor: pointer;
+}
+.modalExprience.show{
+    display: flex;
+}
+.modalbody .actions{
+    display: flex;
+    justify-content: end;
+}
+.modalbody .actions button{
+    border: none;
+    background-color: rgb(29, 104, 7);
+    padding: 8px 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 8px;
+    cursor: pointer;    
+}
+.modalbody .actions button:first-child{
+    margin-right:10px;
+    background: crimson;
+}
