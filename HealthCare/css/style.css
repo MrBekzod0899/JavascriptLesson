@@ -370,6 +370,37 @@ main{
     gap: 1rem;
     margin-top: 21px;
 }
+.modal-content .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-content .row .col-6{
+    flex-basis: 50%;
+    width: 50%;
+    max-width: 50%;
+    gap: 1rem;
+}
+.form-4 .row textarea{
+    width: 100%;
+    resize: none;
+    height: 100px;
+    border-radius: 10px;
+    border-color: #BBBBBB;
+    margin-bottom: 20px;
+    
+}
+.modal-content .row .col-6:first-child{
+    padding-right: 10px;
+}
+.modal-content .row .col-6:last-child{
+    padding-left: 10px;
+}
+.modal-content .row .col-6 select{
+    padding: 12px 5px;
+}
+
 
 .modal-content input,.modal-content select{
     width: 100%;
