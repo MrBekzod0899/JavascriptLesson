@@ -319,12 +319,15 @@ main{
     width: 100%;
     height: 100%;
     background: rgba(200, 200, 200, 0.58);
-    display: flex;
+    display: none;
     justify-content: center;
+}
+.modalPatient.show{
+    display: flex;
 }
 .modalPatient .modalbody {
     position: absolute;
-    top: 100px;
+    top: 50px;
     left: center;
     width: 45%;
     margin: 0 auto;
@@ -383,6 +386,11 @@ main{
 }
 .modal-content input:focus,.modal-content select:focus{
     outline: none;
+    color: black;
+}
+.modal-content input:active,.modal-content select:active{
+    outline: none;
+    color: black;
 }
 .modal-action{
     display: flex;

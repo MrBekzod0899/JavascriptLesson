@@ -159,10 +159,70 @@
                 </div>
             </div>
         </section>
-        <div class="message">
+        <div class="message" onclick="addPatient()">
             <i class="fa-solid fa-user-doctor"></i>
         </div>
     </main>
+    <div class="modalPatient">
+        <div class="modalbody">
+            <div class="modal-title">
+                <h3>Yangi bemor ro'yhatdan o'tkazish</h3>
+            </div>
+            <div class="modal-header">
+                <div class="box">
+                    1
+                </div>
+            </div>
+            <h4>Shaxsiy ma'lumotlar</h4>
+            <div class="modal-content">
+                <div class="leftform">
+                   <input type="text" placeholder="Ism sharifi">
+                    <select name="region" id="region">
+                        <option value="" selected disabled>Hududni tanlang</option>
+                        <option value="Toshkent">Toshkent</option>
+                        <option value="Sirdaryo">Sirdaryo</option>
+                        <option value="Jizzax">Jizzax</option>
+                        <option value="Xorazm">Xorazmn</option>
+                        <option value="Samarqand">Samarqand</option>
+                        <option value="Qashqadaryo">Qashqadaryo</option>
+                        <option value="Surxandaryo">Surxandaryo</option>
+                        <option value="Farg'ona">Farg'ona</option>
+                        <option value="Andijon">Andijon</option>
+                        <option value="Namangan">Namangan</option>
+                        <option value="Nukus">Nukus</option>
+                        <option value="Buxoro">Buxoro</option>
+                        <option value="Navoiy">Navoiy</option>
+                    </select>
+                    <select name="family" id="familystatus" >
+                        <option value="" selected disabled>Oilaviy holati</option>
+                        <option name="family" value="yaxshi">Yaxshi</option>
+                        <option name="family" value="o'rta">o'rta</option>
+                        <option name="family" value="kam taminlangan">kam taminlangan</option>
+                    </select>
+                    <select name="status" id="status">
+                        <option value="" selected disabled>Bandlik holati</option>
+                        <option name="status" value="active">Avtive</option>
+                        <option name="status" value="Not Avtive">Not Avtive</option>
+                    </select>
+                   <input type="text" placeholder="Ism sharifi">
+                </div>
+                <div class="rightform">
+                    <input type="date" placeholder="something">
+                    <input type="text" placeholder="Ism sharifi">
+                    <select name="status" id="status">
+                        <option name="status" value="active">Avtive</option>
+                        <option name="status" value="Not Avtive">Not Avtive</option>
+                    </select>
+                    <input type="text" placeholder="Ism sharifi">
+                    <input type="text" placeholder="Ism sharifi">
+                </div>
+            </div>
+            <div class="modal-action">
+                <button onclick="cancelModal()">Bekor qilish</button>
+                <button onclick=nextPage()>Keyingi Bo'lim</button>
+            </div>
+        </div>
+    </div>
    
     <script src="./js/index.js"></script>
 </body>
